@@ -1,10 +1,12 @@
+/**
+ * Creates an iterator object from a report.
+ * @param {Object} report - The report object.
+ * @returns {Array} An array of all employees.
+ */
 export default function createIteratorObject(report) {
-  const employees = [];
-  for (const department of Object.values(report.allEmployees)) {
-    for (const employee of department) {
-      employees.push(employee);
-    }
+  const allEmployees = [];
+  for (const employees of Object.values(report.allEmployees)) {
+    allEmployees.push(...employees);
   }
-  
-  return employees;
+  return allEmployees;
 }

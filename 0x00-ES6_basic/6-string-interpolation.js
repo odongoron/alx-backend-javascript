@@ -1,3 +1,7 @@
+/**
+ * Returns a description of San Francisco's budget and GDP.
+ * @returns {string} A string describing San Francisco's budget and GDP.
+ */
 export default function getSanFranciscoDescription() {
   const year = 2017;
   const budget = {
